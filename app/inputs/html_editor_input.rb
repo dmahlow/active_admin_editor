@@ -10,9 +10,14 @@ class HtmlEditorInput < Formtastic::Inputs::TextInput
       <a data-wysihtml5-command="insertImage" class="insertImage" title="Image"><span>Image</span></a>
       <a data-wysihtml5-command="insertUnorderedList" title="Unordered list"><span>Bulleted List</span></a>
       <a data-wysihtml5-command="insertOrderedList" title="Ordered list"><span>Numbered List</span></a>
+      <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="p">p</a>
       <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1">h1</a>
       <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2">h2</a>
       <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3">h3</a>
+      <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4">h4</a>
+      <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h5">h5</a>
+      <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h5">h5</a>
+      <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h6">h6</a>
       #{%Q{<a class="button quicksave" href="#">Save</a>} if input_html_options[:quicksave]}
 
       <div data-wysihtml5-dialog="createLink" style="display: none">
