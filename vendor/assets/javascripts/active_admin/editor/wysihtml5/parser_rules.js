@@ -6,7 +6,7 @@
  *
  *    <a href="http://foobar.com">foo</a>
  *    ... becomes ...
- *    <a href="http://foobar.com" target="_blank" rel="nofollow">foo</a>
+ *    <a href="http://foobar.com">foo</a>
  *
  *    <img align="left" src="http://foobar.com/image.png">
  *    ... becomes ...
@@ -182,10 +182,6 @@ var wysihtml5ParserRules = {
             "check_attributes": {
                 "href": "url" // if you compiled master manually then change this from 'url' to 'href'
             },
-            "set_attributes": {
-                "rel": "nofollow",
-                "target": "_blank"
-            }
         },
         "img": {
             "check_attributes": {
